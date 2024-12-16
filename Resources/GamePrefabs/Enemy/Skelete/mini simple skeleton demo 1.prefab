@@ -911,6 +911,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackCooldown: 1.5
   rotationSpeed: 5
+  dropList:
+  - {fileID: 959041370914154120, guid: fc2e0bed8d08ea646be905e4afa3ea63, type: 3}
 --- !u!114 &1194614788875364803
 MonoBehaviour:
   m_ObjectHideFlags: 0

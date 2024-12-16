@@ -403,7 +403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95556a1aead2ac449bf80d4f1e993a6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponDamage: 50
+  weaponDamage: 1
 --- !u!136 &7344805656046416901
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -463,8 +463,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b3681b15fa0a0ad4e936d65ce5c2a0fb,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b3681b15fa0a0ad4e936d65ce5c2a0fb,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b3681b15fa0a0ad4e936d65ce5c2a0fb,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: b3681b15fa0a0ad4e936d65ce5c2a0fb,
+        type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.68
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b3681b15fa0a0ad4e936d65ce5c2a0fb,
         type: 3}
@@ -526,6 +541,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: -8079782462984123775, guid: b3681b15fa0a0ad4e936d65ce5c2a0fb,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ee357ce287f20ad40811f810fa652e4e, type: 2}
     - target: {fileID: -7687097046278307549, guid: b3681b15fa0a0ad4e936d65ce5c2a0fb,
         type: 3}
       propertyPath: m_Layer
@@ -556,6 +576,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: -6135593927970851872, guid: b3681b15fa0a0ad4e936d65ce5c2a0fb,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ee357ce287f20ad40811f810fa652e4e, type: 2}
     - target: {fileID: -5565194406652737086, guid: b3681b15fa0a0ad4e936d65ce5c2a0fb,
         type: 3}
       propertyPath: m_Layer
@@ -566,6 +591,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: -5126060000771187914, guid: b3681b15fa0a0ad4e936d65ce5c2a0fb,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ee357ce287f20ad40811f810fa652e4e, type: 2}
     - target: {fileID: -5001844056843982758, guid: b3681b15fa0a0ad4e936d65ce5c2a0fb,
         type: 3}
       propertyPath: m_Layer
@@ -925,7 +955,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.7
-  m_Speed: 10
+  m_Speed: 2
   m_Acceleration: 30
   avoidancePriority: 50
   m_AngularSpeed: 720
@@ -951,6 +981,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackCooldown: 1.5
   rotationSpeed: 5
+  dropList: []
 --- !u!4 &8987542344525928734 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b3681b15fa0a0ad4e936d65ce5c2a0fb,

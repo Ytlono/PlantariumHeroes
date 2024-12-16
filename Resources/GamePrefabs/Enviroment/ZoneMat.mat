@@ -109,26 +109,26 @@ Material:
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _EdgeColorIntensity: 3.24
-    - _EdgeWidth: 0.2
+    - _EdgeWidth: 0.35
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0
-    - _NoiseScale: 50
+    - _NoiseScale: 12
     - _NormalScale: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Smoothness: 1
+    - _Smoothness: 0.22
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Surface: 0
-    - _UseSpecularMap: 1
+    - _UseSpecularMap: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
@@ -136,9 +136,9 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DissolveDirection: {r: 0, g: 0, b: 0, a: 0}
     - _DissolveOffest: {r: 0, g: 0, b: 0, a: 0}
-    - _EdgeColor: {r: 0, g: 3.9999995, b: 3.9208028, a: 0}
+    - _EdgeColor: {r: 0, g: 0.9999999, b: 0.9802007, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _NoiseUVSpeed: {r: 0, g: 20, b: 0, a: 0}
+    - _NoiseUVSpeed: {r: 10, g: 20, b: 0, a: 0}
     - _Offest: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 0}
