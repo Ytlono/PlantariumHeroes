@@ -374,11 +374,11 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -927199367670048503, guid: 90c25ff0db82bf64cbc6b8e405018824,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2098613199119009112}
+      addedObject: {fileID: 3882209925114813661}
     - targetCorrespondingSourceObject: {fileID: -927199367670048503, guid: 90c25ff0db82bf64cbc6b8e405018824,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3882209925114813661}
+      addedObject: {fileID: 4105415467915323391}
   m_SourcePrefab: {fileID: 100100000, guid: 90c25ff0db82bf64cbc6b8e405018824, type: 3}
 --- !u!1 &5514374066518037451 stripped
 GameObject:
@@ -386,19 +386,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4586653339208403650}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2098613199119009112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5514374066518037451}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95556a1aead2ac449bf80d4f1e993a6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weaponDamage: 10
 --- !u!136 &3882209925114813661
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -422,6 +409,19 @@ CapsuleCollider:
   m_Height: 1.7620578
   m_Direction: 2
   m_Center: {x: 0.00000026530972, y: -0.00000009933735, z: -0.76417696}
+--- !u!114 &4105415467915323391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5514374066518037451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c2eed9487b74114e9313ffc2d389733, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponDamage: 10
 --- !u!4 &8853412932826554840 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 90c25ff0db82bf64cbc6b8e405018824,
@@ -867,9 +867,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
-  m_Height: 1.5
+  m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0, y: 0.73099023, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!54 &4954183752142905957
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -926,5 +926,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
-  currentHealth: 0
   attackDamage: 0
