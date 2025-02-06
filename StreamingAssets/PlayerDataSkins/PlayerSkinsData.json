@@ -42,7 +42,7 @@
       "Description": "An otherworldly skin that connects the player to the cosmos.",
       "RarityLevel": "MYTHICAL",
       "DropChance": 0.01,
-      "Access": "UNLOCKED",
+      "Access": "LOCKED",
       "SkinSprite": "GamePrefabs/Skins/Player/PlayerSkins/AstralTitan"
     },
     {

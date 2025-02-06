@@ -134,19 +134,11 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100012, guid: bed7a092d53e7c748bd65db98cebf9d6,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6998332997028068468}
-    - targetCorrespondingSourceObject: {fileID: 100012, guid: bed7a092d53e7c748bd65db98cebf9d6,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1592820127564891570}
     - targetCorrespondingSourceObject: {fileID: 100012, guid: bed7a092d53e7c748bd65db98cebf9d6,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2272575065115390562}
-    - targetCorrespondingSourceObject: {fileID: 100012, guid: bed7a092d53e7c748bd65db98cebf9d6,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7632804547388708689}
     - targetCorrespondingSourceObject: {fileID: 100012, guid: bed7a092d53e7c748bd65db98cebf9d6,
         type: 3}
       insertIndex: -1
@@ -163,6 +155,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1591280270611115339}
+    - targetCorrespondingSourceObject: {fileID: 100012, guid: bed7a092d53e7c748bd65db98cebf9d6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8058386563449762163}
   m_SourcePrefab: {fileID: 100100000, guid: bed7a092d53e7c748bd65db98cebf9d6, type: 3}
 --- !u!1 &2013032417925930195 stripped
 GameObject:
@@ -193,33 +189,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1.02, z: 0}
---- !u!54 &6998332997028068468
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2013032417925930195}
-  serializedVersion: 4
-  m_Mass: 10
-  m_Drag: 0
-  m_AngularDrag: 2
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
 --- !u!114 &1592820127564891570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,26 +214,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
-  currentHealth: 0
   currentManna: 0
-  money: 1000
   mannaRechargeSpeed: 0
+  money: 1000
   healthBar: {fileID: 0}
   manaBar: {fileID: 0}
   playerMoney: {fileID: 0}
-  PlayerMaterial: {fileID: 0}
---- !u!114 &7632804547388708689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2013032417925930195}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c169d112ef1960e468af92145531bf20, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  playerMaterial: {fileID: 0}
 --- !u!114 &8554846282097170441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -280,6 +236,7 @@ MonoBehaviour:
   speed: 10
   rotationSpeed: 20
   cameraTransform: {fileID: 0}
+  gravity: 9.8
 --- !u!114 &4057421376460226297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -318,8 +275,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageMultiplier: 2
   speedMultiplier: 2
-  deathZone: {fileID: 0}
   ultimateDuration: 10
+  deathZone: {fileID: 0}
+--- !u!143 &8058386563449762163
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013032417925930195}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!4 &2013032417926152435 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400012, guid: bed7a092d53e7c748bd65db98cebf9d6,
