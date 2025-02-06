@@ -1,0 +1,85 @@
+{
+  "skins": [
+    {
+      "Price": 120,
+      "Name": "Lunar Fang",
+      "Description": "A sword forged from the light of the moon, ready to pierce through darkness.",
+      "RarityLevel": "COMMON",
+      "DropChance": 0.6,
+      "Access": "UNLOCKED",
+      "SkinSprite": "GamePrefabs/Skins/Weapon/WeaponSkins/MoonSword1"
+    },
+    {
+      "Price": 180,
+      "Name": "Moonlight Edge",
+      "Description": "A rare blade blessed by lunar magic, glowing faintly in the dark.",
+      "RarityLevel": "UNCOMMON",
+      "DropChance": 0.5,
+      "Access": "UNLOCKED",
+      "SkinSprite": "GamePrefabs/Skins/Weapon/WeaponSkins/MoonSword2"
+    },
+    {
+      "Price": 240,
+      "Name": "Celestial Strike",
+      "Description": "An epic sword, crackling with celestial energy and moonlight power.",
+      "RarityLevel": "RARE",
+      "DropChance": 0.4,
+      "Access": "UNLOCKED",
+      "SkinSprite": "GamePrefabs/Skins/Weapon/WeaponSkins/MoonSword3"
+    },
+    {
+      "Price": 300,
+      "Name": "Moonlit Fury",
+      "Description": "A legendary blade wielded by warriors of the moon, glowing with ethereal strength.",
+      "RarityLevel": "EPIC",
+      "DropChance": 0.3,
+      "Access": "LOCKED",
+      "SkinSprite": "GamePrefabs/Skins/Weapon/WeaponSkins/MoonSword4"
+    },
+    {
+      "Price": 360,
+      "Name": "Tidebringer",
+      "Description": "A mythical sword that commands the tides, infused with lunar power.",
+      "RarityLevel": "LEGENDARY",
+      "DropChance": 0.2,
+      "Access": "UNLOCKED",
+      "SkinSprite": "GamePrefabs/Skins/Weapon/WeaponSkins/MoonSword5"
+    },
+    {
+      "Price": 420,
+      "Name": "Nightfall's Embrace",
+      "Description": "A blade forged under the stars, infused with the spirit of the night sky.",
+      "RarityLevel": "MYTHICAL",
+      "DropChance": 0.15,
+      "Access": "LOCKED",
+      "SkinSprite": "GamePrefabs/Skins/Weapon/WeaponSkins/MoonSword6"
+    },
+    {
+      "Price": 480,
+      "Name": "Lunar Eclipse",
+      "Description": "An ancient weapon, glowing with a deep blue lunar aura, the symbol of an ancient power.",
+      "RarityLevel": "MYTHICAL",
+      "DropChance": 0.1,
+      "Access": "LOCKED",
+      "SkinSprite": "GamePrefabs/Skins/Weapon/WeaponSkins/MoonSword7"
+    },
+    {
+      "Price": 540,
+      "Name": "Moon Goddess' Blade",
+      "Description": "A powerful sword forged by the moon goddess herself, filled with divine power.",
+      "RarityLevel": "EPIC",
+      "DropChance": 0.05,
+      "Access": "LOCKED",
+      "SkinSprite": "GamePrefabs/Skins/Weapon/WeaponSkins/MoonSword8"
+    },
+    {
+      "Price": 600,
+      "Name": "Lunar Sovereign",
+      "Description": "The ultimate lunar blade, radiating with pure celestial energy and unmatched power.",
+      "RarityLevel": "MYTHICAL",
+      "DropChance": 0.01,
+      "Access": "LOCKED",
+      "SkinSprite": "GamePrefabs/Skins/Weapon/WeaponSkins/MoonSword9"
+    }
+  ]
+}
