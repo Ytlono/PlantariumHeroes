@@ -9,7 +9,7 @@ namespace MyGameProject
         [SerializeField] private GameObject spawnPrefab;
         [SerializeField] private Transform statueTarget;
         [SerializeField] private GameObject challengeZone;
-        private StatueController statueController;
+        private StatueController  statueController ;
 
         [SerializeField] private Vector2 fieldSize = new Vector2(15, 15);
         [SerializeField] private float minDistanceFromCenter = 8f;
