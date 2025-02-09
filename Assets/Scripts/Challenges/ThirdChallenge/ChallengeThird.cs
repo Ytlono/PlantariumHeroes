@@ -12,7 +12,7 @@ namespace MyGameProject
         [SerializeField] private float challengeTime = 40f;
         [SerializeField] private Text timeText;
         [SerializeField] private Text spheresCollectedText;
-
+ 
         private Player player;
         private float remainingTime;
         private List<GameObject> spawnedSpheres = new List<GameObject>();
