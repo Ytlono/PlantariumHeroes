@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 namespace MyGameProject
 {
-    public class ChallengeThird : BaseChallenge
+    public class ChallengeThird : BaseChallenge 
     {
         [SerializeField] private GameObject spherePrefab;
         [SerializeField] private Vector2 fieldSize = new Vector2(15, 15);
