@@ -1,0 +1,58 @@
+{
+  "skins": [
+    {
+      "Price": 100,
+      "Name": "Crimson Shade",
+      "Description": "A fiery skin for those who enjoy a bold presence.",
+      "RarityLevel": "COMMON",
+      "DropChance": 0.5,
+      "Access": "UNLOCKED",
+      "SkinSprite": "GamePrefabs/Skins/Player/PlayerSkins/CrimsonShade"
+    },
+    {
+      "Price": 150,
+      "Name": "Azure Vortex",
+      "Description": "A skin that embodies the swirling power of the ocean.",
+      "RarityLevel": "RARE",
+      "DropChance": 0.3,
+      "Access": "UNLOCKED",
+      "SkinSprite": "GamePrefabs/Skins/Player/PlayerSkins/AzureVortex"
+    },
+    {
+      "Price": 200,
+      "Name": "Golden Nebula",
+      "Description": "A majestic skin that shimmers like stars in the night sky.",
+      "RarityLevel": "EPIC",
+      "DropChance": 0.1,
+      "Access": "UNLOCKED",
+      "SkinSprite": "GamePrefabs/Skins/Player/PlayerSkins/GoldenNebula"
+    },
+    {
+      "Price": 250,
+      "Name": "Eclipse Sovereign",
+      "Description": "A rare and regal skin, perfect for those who command the shadows.",
+      "RarityLevel": "LEGENDARY",
+      "DropChance": 0.05,
+      "Access": "LOCKED",
+      "SkinSprite": "GamePrefabs/Skins/Player/PlayerSkins/EclipseSovereign"
+    },
+    {
+      "Price": 300,
+      "Name": "Astral Titan",
+      "Description": "An otherworldly skin that connects the player to the cosmos.",
+      "RarityLevel": "MYTHICAL",
+      "DropChance": 0.01,
+      "Access": "LOCKED",
+      "SkinSprite": "GamePrefabs/Skins/Player/PlayerSkins/AstralTitan"
+    },
+    {
+      "Price": 350,
+      "Name": "Monochrome Crystal",
+      "Description": "A stunning legendary skin that radiates with the purity of a monochrome crystal.",
+      "RarityLevel": "LEGENDARY",
+      "DropChance": 0.02,
+      "Access": "LOCKED",
+      "SkinSprite": "GamePrefabs/Skins/Player/PlayerSkins/MonochromeCrystal"
+    }
+  ]
+}

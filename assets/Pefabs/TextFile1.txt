@@ -1,0 +1,118 @@
+﻿
+        [SerializeField]
+        private float jumpForce = 8f; // Увеличено значение для более заметного прыжка
+
+        private Rigidbody rb;
+        private bool isGrounded;
+        private Animator animator;
+
+        private float currentJumpSpeed = 0f;
+        public float smoothTime = 0.2f;
+        private float velocityY = 0f;
+
+        public float JumpForce
+        {
+            get { return jumpForce; }
+            set { jumpForce = value; }
+        }
+
+        public bool IsGrounded
+        {
+            get { return isGrounded; }
+            private set { isGrounded = value; }
+        }
+
+        public float CurrentJumpSpeed
+        {
+            get { return currentJumpSpeed; }
+            set { currentJumpSpeed = value; }
+        }
+
+        public float SmoothTime
+        {
+            get { return smoothTime; }
+            set { smoothTime = value; }
+        }
+
+        public float VelocityY
+        {
+            get { return velocityY; }
+            set { velocityY = value; }
+        }
+
+        void Awake()
+        {
+            rb = GetComponent<Rigidbody>();
+            animator = GetComponent<Animator>();
+            animator.applyRootMotion = false; // Отключение root motion для предотвращения зависания
+        }
+
+        private void Update()
+        {
+            if (IsGrounded)
+            {
+                HandleGroundedState();
+            }
+            else
+            {
+                HandleAirborneState();
+            }
+        }
+
+        private void HandleGroundedState()
+        {
+            animator.SetBool("IsJump", false);
+            CurrentJumpSpeed = Mathf.SmoothDamp(CurrentJumpSpeed, 0f, ref velocityY, SmoothTime);
+            animator.SetFloat("jumpSpeed", CurrentJumpSpeed);
+        }
+
+        private void HandleAirborneState()
+        {
+            animator.SetBool("IsJump", true);
+
+            // Используем текущую скорость Rigidbody для отображения прыжка
+            CurrentJumpSpeed = rb.velocity.y;
+            animator.SetFloat("jumpSpeed", Mathf.Abs(CurrentJumpSpeed));
+        }
+
+        public void Jump()
+        {
+            if (IsGrounded) // Убедимся, что прыжок возможен только при контакте с землей
+            {
+                Debug.Log("Jump called");
+                rb.AddForce(Vector3.up * JumpForce, ForceMode.VelocityChange);
+                animator.SetBool("IsJump", true);
+                IsGrounded = false; // Сразу сбрасываем состояние
+            }
+        }
+
+        private void OnCollisionStay(Collision collision)
+        {
+            if (collision.gameObject.CompareTag("Ground") && Mathf.Approximately(rb.velocity.y, 0))
+            {
+                IsGrounded = true;
+            }
+        }
+
+        private void OnCollisionExit(Collision collision)
+        {
+            if (collision.gameObject.CompareTag("Ground"))
+            {
+                IsGrounded = false;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+        
+            if (player.IsAlive() && playerJump.IsGrounded && Input.GetKeyDown(KeyCode.Space) && !isAttacking)
+            {
+                playerJump.Jump();
+            }

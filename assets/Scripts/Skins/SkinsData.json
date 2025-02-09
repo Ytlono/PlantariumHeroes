@@ -1,0 +1,49 @@
+{
+  "skins": [
+    {
+      "Price": 100,
+      "Name": "Skin 1",
+      "Description": "First skin description.",
+      "RarityLevel": "COMMON",
+      "DropChance": 0.5,
+      "Access": "UNLOCKED",
+      "SkinSprite": "GamePrefabs/Skins/pixil-frame-0_12"
+    },
+    {
+      "Price": 150,
+      "Name": "Skin 2",
+      "Description": "Second skin description.",
+      "RarityLevel": "UNCOMMON",
+      "DropChance": 0.4,
+      "Access": "LOCKED",
+      "SkinSprite": "GamePrefabs/Skins/pixil-frame-0_13"
+    },
+    {
+      "Price": 200,
+      "Name": "Skin 3",
+      "Description": "Third skin description.",
+      "RarityLevel": "RARE",
+      "DropChance": 0.3,
+      "Access": "LOCKED",
+      "SkinSprite": "GamePrefabs/Skins/polyArtTex"
+    },
+    {
+      "Price": 250,
+      "Name": "Skin 4",
+      "Description": "Fourth skin description.",
+      "RarityLevel": "EPIC",
+      "DropChance": 0.2,
+      "Access": "LOCKED",
+      "SkinSprite": "GamePrefabs/Skins/polyArtTex_1"
+    },
+    {
+      "Price": 300,
+      "Name": "Skin 5",
+      "Description": "Fifth skin description.",
+      "RarityLevel": "LEGENDARY",
+      "DropChance": 0.1,
+      "Access": "LOCKED",
+      "SkinSprite": "GamePrefabs/Skins/polyArtTex_2"
+    }
+  ]
+}
